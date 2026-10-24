@@ -1,0 +1,6 @@
+{
+  "name": "LUMIÈRE SKINCARE — Clean Botanical Luxury Skincare",
+  "description": "High-performance luxury skincare formulated with clean, clinically tested botanical ingredients for healthy, radiant skin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

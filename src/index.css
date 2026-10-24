@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FDFBF7;
+    --bg-secondary: #FAF7F2;
+    --surface-sand: #EFECE6;
+    --surface-banner: #EAE3D9;
+    --surface-announcement: #ECE7E1;
+    --surface-pill: #D9CEBE;
+    --text-primary: #1A1A1A;
+    --text-secondary: #4A4640;
+    --text-muted: #787269;
+    --accent-gold: #C5A880;
+    --accent-gold-dark: #B89B72;
+    --border-hairline: #E8E4DC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1A1A1A;
+    background-color: #FDFBF7;
+    text-align: right;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    direction: rtl;
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial, .font-display {
+    font-family: 'Vazirmatn', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0 !important;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+/* Hide scrollbars for horizontal app-style carousels & chip bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Adaptive container for Mobile, Tablet, Laptop, All-in-One (24"-27") & Large Monitors */
+.fixlife-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.875rem;
+  padding-left: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .fixlife-container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fixlife-container {
+    max-width: 1380px;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .fixlife-container {
+    max-width: 1640px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+/* Safe area padding for mobile/tablet bottom navigation bar */
+.pb-safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-hero-drift {
+  animation: subtleZoom 18s ease-in-out infinite alternate;
+}
